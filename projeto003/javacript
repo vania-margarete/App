@@ -1,0 +1,23 @@
+function calculo_V_D(vit, der) {
+    let calculo = vit - der;
+    let ranque;
+
+    if (vit < 10) {
+        ranque = "Ferro";
+    } else if (vit >= 11 && vit <= 20) {
+        ranque = "Bronze";
+    } else if (vit >=                                                                                                                      21 && vitorias <= 50) {
+        ranque = "Prata";
+    } else if (vit >= 51 && vit <= 80) {
+       ranque = "Ouro";
+    } else if (vit >= 81 && vit <= 90) {
+        ranque = "Diamante";
+    } else if (vit >= 91 && vit <= 100) {
+        ranque = "Lendário";
+    } else {        
+        ranque = "Imortal";
+    }
+
+
+    return `O Herói tem um saldo de ${calculo} e está no nível de ${ranque}`;
+}
